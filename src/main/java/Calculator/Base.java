@@ -12,9 +12,10 @@ public class Base {
         System.out.print("Введите 2-ое число: ");
         double b = Input.doubleNum();
         System.out.println("------------ИТОГО------------");
+        Operation calc;
         switch(oper) {
             case '*':
-                Operation calc = new Mult();
+                calc = new Mult();
                 System.out.printf("%.4f %s %.4f %s %.4f", a, oper, b, " = ", calc.getResult(a, b));
                 break;
             case '+':
